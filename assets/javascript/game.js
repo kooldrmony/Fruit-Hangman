@@ -3,7 +3,7 @@ document.onkeyup = function(event) {
 	    updatePage(letterGuessed);
 }
 
-const words = ["orange", "apple", "pineapple", "cherry", "strawberry"]
+const words = ["orange", "apple", "pineapple", "cherry", "strawberry", "kiwi", "blueberry"]
 
 let currentWord = null;
 
