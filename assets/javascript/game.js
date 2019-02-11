@@ -15,6 +15,8 @@ let letterGuessed = [];
 
 let correctLetterGuessed = [];
 
+let chosenLetter = [];
+
 
 
 function game() {
@@ -72,6 +74,12 @@ function matchedLetter(letter) {
 const updatePage = (letter) => {
 		matchedLetter(letter);
 		wordView();
+}
+
+const updateWordLetters = (letter) => {
+	   if ((chosenLetter.indexOf(letter) === -1) && (this.lettersOfWord.indexOf(letter) === -1)) {
+
+	   		chosenLetter.push(letter);
 }
 // function noun() {
 // 	if(random === "orange") {
