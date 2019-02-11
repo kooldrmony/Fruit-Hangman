@@ -44,6 +44,9 @@ console.log(lettersOfWord);
 // 	}
 // }
 wordView();
+matchedLetter();
+
+
 }
 
 game();
@@ -52,7 +55,7 @@ function wordView() {
 	let wordBuild = "";
 
 	for(let i = 0; i < lettersOfWord.length; i++){
-		  if (letterGuessed.indexOf(lettersOfWord[i]) !== -1) {
+		  if (correctLetterGuessed.indexOf(lettersOfWord[i]) !== -1) {
 		  		 wordBuild += lettersOfWord[i];
 	} else {
 		wordBuild += "&nbsp;_&nbsp;";
@@ -80,7 +83,10 @@ const updateWordLetters = (letter) => {
 	   if ((chosenLetter.indexOf(letter) === -1) && (this.lettersOfWord.indexOf(letter) === -1)) {
 
 	   		chosenLetter.push(letter);
+ }
 }
+
+
 // function noun() {
 // 	if(random === "orange") {
 // 		console.log("The word is orange");
